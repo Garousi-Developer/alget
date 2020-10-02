@@ -18,13 +18,13 @@ class ProductView extends StatelessWidget {
                         scrollDirection: Axis.horizontal,
                         padding: EdgeInsets.symmetric(vertical: 20),
                         itemCount: 7,
-                        itemBuilder: (BuildContext context, int categoryIndex) => Padding(
+                        itemBuilder: (BuildContext context, int index) => Padding(
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             child: ButtonTheme(
                                 height: 40,
                                 child: FlatButton(
                                     onPressed: () {},
-                                    child: Text('Title'),
+                                    child: Text(state.categories[index].name),
                                 ),
                             ),
                         ),
